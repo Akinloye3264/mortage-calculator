@@ -1,0 +1,191 @@
+body {
+    padding-top: 5%;
+    margin: 20px;
+    background-color: lightblue
+}
+
+.the-header{
+    display: grid;
+    grid-template-columns: 2fr 2fr ;
+    
+
+}
+
+.the-header p{
+    margin-top: 30px;
+
+    text-decoration: underline;
+}
+
+.The-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 0;
+    grid-template-rows: 1fr;
+    padding: 20px;
+    size: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+
+}   
+
+.Container {
+   background-color: #fcfeff;
+    color: black;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 70px;
+   
+   
+}
+.container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 0;
+    grid-template-rows: 1fr;
+    background-color: #1a2d3a;
+    color: white;
+    border-bottom-left-radius: 40px;
+    padding-left: 40px;
+}
+
+.submit {
+    background-color: #c9dc1b;
+    color: rgb(15, 12, 12);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+    size: 20px;
+}
+
+
+
+/* Empty state styles */
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    height: 100%;
+}
+
+.empty-illustration {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 30px;
+    opacity: 0.7;
+}
+
+.empty-state h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.empty-state p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #a0a0a0;
+    max-width: 300px;
+}
+
+.radio-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: none;
+    border: none;
+    padding: 0;
+    margin-bottom: 18px;
+    width: 100%;
+    max-width: 340px;
+}
+
+.radio-buttons div.selected {
+    background: #fcfdea;
+    border-color: #c9dc1b;
+}
+
+.radio-buttons div:not(.selected) {
+    background: #fcfdea;
+    border-color: #ecebbd;
+}
+
+
+.radio-buttons div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fcfdea;
+    border: 2px solid #ecebbd;
+    border-radius: 6px;
+    padding: 8px 12px;
+}
+
+.radio-buttons input[type="radio"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid #c9dc1b;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+.radio-buttons input[type="radio"]:checked::before {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background-color: #c9dc1b;
+    border-radius: 50%;
+}
+.radio-buttons input[type="radio"]:checked + label {
+    font-weight: bold;
+    background: none;
+}
+.radio-buttons label {
+    font-size: 16px;
+    cursor: pointer;
+}
+.The-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 0;
+    grid-template-rows: 1fr;
+}
+ 
+.clear{
+    text-align: center;
+    cursor: pointer;
+    text-decoration: dotted underline;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.Showing-result{
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-top: 2px solid #c9dc1b;
+}
+.Showing-result h1{
+    font-size: 10px;
+    font-family: 'sans-serif';
+}
+
+
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+<link rel="stylesheet" href="./style.css">
+  
+  <title> Mortgage repayment calculator</title>
+
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="The-cards">
+  <div class="Container">
+    <div class="the-header">
+    <h1>Mortage Calculator</h1>
+  <p class="clear"> Clear All</p>  
+  </div>
+  <label for="amount">Mortage Amount</label>
+  <br>
+ <span class="input-sign"> <span style="background-color: lightblue;">£</span></span><input  type="text" id="Amount" name="Amount" >
+<br>
+<br>
+  <div class="terms">
+<label  for="term"> Mortage term</label>
+<br>
+ <input type="text" id="term" name="term">
+  <span class="input-sign"> <span style="background-color: lightblue;">years</span></span>
+<br>
+<br>
+<label for="term">Interest rate</label>
+<br>
+
+  <input type="text" id="rate" name="rate">
+  <span class="input-sign"> <span style="background-color: lightblue;">%</span></span>
+  </div>
+<br>
+<br>
+
+ <label for="type">Mortage Type</label>
+<br>
+<div class="radio-buttons">
+<div>
+  <input type="radio" id="repayment" name="mortgageType" value="repayment" checked>
+  <label for="repayment">Repayment</label>
+</div>
+<div>
+  <input type="radio" id="interestOnly" name="mortgageType" value="interestOnly">
+  <label for="interestOnly">Interest Only</label>
+</div>
+  </div>
+<br>
+<button  class="submit" id="calculate" onclick="Submit()"> Calculate Repayments</button>
+<br>
+<br>
+  </div>
+
+
+  <div class="container2">
+    <div class="result-card">
+    </div>
+  </div>
+</div>
+<script src="./script.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/Akinloye3264">Akinloye3264</a>.
+  </div>
+</body>
+</html>
